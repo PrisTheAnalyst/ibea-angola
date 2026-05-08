@@ -9,10 +9,10 @@
 
 ---
 
-## 🎯 O Problema que o IBEA Resolve
+## O Problema que o IBEA Resolve
 
 Angola dispõe de dados económicos oficiais publicados com atraso de meses pelo INE e BNA.  
-Esses dados capturam a economia formal — mas ignoram o que acontece nas ruas, nos mercados informais e na vida real de 34 milhões de angolanos.
+Esses dados capturam a economia formal, mas ignoram o que acontece nas ruas, nos mercados informais e na vida real de 34 milhões de angolanos.
 
 **O IBEA preenche esse gap.**
 
@@ -23,7 +23,7 @@ Esses dados capturam a economia formal — mas ignoram o que acontece nas ruas, 
 
 ---
 
-## 📊 O Índice IBEA — Como Funciona
+## O Índice IBEA: Como Funciona
 
 O IBEA é um índice composto de **0 a 100** calculado mensalmente a partir de 6 módulos independentes, cada um com peso definido pela sua elasticidade no bem-estar da população angolana.
 
@@ -46,7 +46,7 @@ A ponderação não é arbitrária e reflecte a **elasticidade do bem-estar no c
 
 ---
 
-## 🏗️ Arquitectura do Sistema
+## Arquitectura do Sistema
 
 O IBEA é um **sistema de dados** com 4 camadas, não um dashboard estático.
 
@@ -78,31 +78,31 @@ O IBEA é um **sistema de dados** com 4 camadas, não um dashboard estático.
 
 ---
 
-## 🔬 Os 6 Módulos em Detalhe
+## Os 6 Módulos em Detalhe
 
-### 🌽 M1 — Inflação Alimentar (IPA)
+### M1 — Inflação Alimentar (IPA)
 Monitoriza o preço de um cabaz básico de 12 produtos em Luanda e províncias.  
 **Produtos:** Funge, Arroz, Óleo alimentar, Pão, Carne de frango, Peixe, Feijão, Açúcar, Tomate, Sal, Farinha de milho, Água.  
 **Fontes:** Recolha de campo semanal + Kero/Jumia scraping + INE Angola.
 
-### 🛢️ M2 — Petróleo e Economia
+### M2 — Petróleo e Economia
 Correlação entre preço do Brent, produção angolana e impacto no OGE.  
 **Fontes:** OPEC Monthly Report, BNA, Ministério das Finanças de Angola.
 
-### 💵 M3 — Salário Mínimo vs Custo de Vida
+### M3 — Salário Mínimo vs Custo de Vida
 Poder de compra real do salário mínimo nacional face à inflação acumulada.  
 **Métrica principal:** Défice de cobertura do cabaz básico em AOA.  
 **Fontes:** MAPTSS, INE Angola, dados de campo.
 
-### 💱 M4 — Kwanza e Câmbio Paralelo
+### M4 — Kwanza e Câmbio Paralelo
 Spread entre taxa oficial BNA e mercado paralelo (Candonga). Impacto nas importações.  
 **Fontes:** BNA + recolha de campo semanal + Wise API como proxy.
 
-### 👩‍👧 M5 — Vulnerabilidade e Género
+### M5 — Vulnerabilidade e Género
 Índice de vulnerabilidade económica com lente de género e zona geográfica.  
 **Fontes:** INE Angola, UNFPA Angola, dados de campo primários.
 
-### 📊 M6 — IBEA Composto
+### M6 — IBEA Composto
 Consolidação matemática normalizada (0–100) dos 5 módulos anteriores.  
 Publicado mensalmente com relatório de variação, alertas e contexto narrativo.
 
@@ -151,7 +151,7 @@ Semana 7-8  ░░░░░░▓▓  IBEA composto + Power BI + 1ª publicaçã
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 ibea-angola/
@@ -239,7 +239,7 @@ ibea-angola/
 
 ---
 
-## 📜 Licença
+## Licença
 
 MIT License — livre para usar, adaptar e distribuir com atribuição.
 
