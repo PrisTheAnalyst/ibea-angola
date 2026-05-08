@@ -16,10 +16,10 @@ Esses dados capturam a economia formal — mas ignoram o que acontece nas ruas, 
 
 **O IBEA preenche esse gap.**
 
-É um sistema de monitorização de alta frequência que combina dados oficiais, recolha de campo e fontes abertas para produzir um índice composto mensal — o **Índice de Bem-Estar Económico Angola** — que qualquer decisor, jornalista ou investigador pode consultar, gratuitamente, em tempo real.
+É um sistema de monitorização de alta frequência que combina dados oficiais, recolha de campo e fontes abertas para produzir um índice composto mensal, o **Índice de Bem-Estar Económico Angola** que qualquer decisor, jornalista ou investigador pode consultar, gratuitamente, em tempo real.
 
 > *"A diferença entre dados e inteligência é o contexto. O IBEA transforma números angolanos em decisões fundamentadas."*
-> — PrisTheAnalyst
+> PrisTheAnalyst
 
 ---
 
@@ -38,17 +38,17 @@ O IBEA é um índice composto de **0 a 100** calculado mensalmente a partir de 6
 
 ### Porquê esta ponderação?
 
-A ponderação não é arbitrária — reflecte a **elasticidade do bem-estar no contexto angolano**:
+A ponderação não é arbitrária e reflecte a **elasticidade do bem-estar no contexto angolano**:
 
 - **M1 (25%) e M3 (25%)** dominam porque em economias em desenvolvimento, segurança alimentar e poder de compra são os principais determinantes de estabilidade social.
-- **M2 (20%) e M4 (15%)** funcionam como *leading indicators* — antecipam o que acontecerá com a inflação em 30 a 60 dias, antes de os dados oficiais refletirem a realidade.
-- **M5 (15%)** é o factor de ajuste ESG — garante que o índice não oculta as disparidades estruturais que os dados macro habitualmente ignoram.
+- **M2 (20%) e M4 (15%)** funcionam como *leading indicators* antecipam o que acontecerá com a inflação em 30 a 60 dias, antes de os dados oficiais refletirem a realidade.
+- **M5 (15%)** é o factor de ajuste ESG, garante que o índice não oculta as disparidades estruturais que os dados macro habitualmente ignoram.
 
 ---
 
 ## 🏗️ Arquitectura do Sistema
 
-O IBEA é um **sistema de dados** com 4 camadas — não um dashboard estático.
+O IBEA é um **sistema de dados** com 4 camadas, não um dashboard estático.
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -108,7 +108,7 @@ Publicado mensalmente com relatório de variação, alertas e contexto narrativo
 
 ---
 
-## ⚙️ Stack Tecnológica
+## Stack Tecnológica
 
 | Camada | Tecnologia | Função |
 |--------|-----------|--------|
@@ -124,19 +124,19 @@ Publicado mensalmente com relatório de variação, alertas e contexto narrativo
 
 ---
 
-## 🛡️ Resiliência de Dados — Arquitectura Fail-Safe
+## Resiliência de Dados — Arquitectura Fail-Safe
 
 O sistema foi desenhado para **falhar com elegância**:
 
 1. **Robustez de Scraping:** Se uma fonte HTML mudar, o sistema regista o erro via GitHub Actions e utiliza automaticamente a média móvel de 7 dias como valor temporário.
 
-2. **Validação de Qualidade:** Filtro de desvio padrão — se um dado variar mais de 30% sem choque macroeconómico correspondente, é marcado para revisão manual (*Human-in-the-loop*).
+2. **Validação de Qualidade:** Filtro de desvio padrão, se um dado variar mais de 30% sem choque macroeconómico correspondente, é marcado para revisão manual (*Human-in-the-loop*).
 
 3. **Fontes Alternativas:** Se os dados oficiais do INE atrasarem, o M4 usa proxies de mercado (Wise/spread bancário) para estimar a pressão inflacionária.
 
 ---
 
-## 🗓️ Roadmap de Implementação
+## Roadmap de Implementação
 
 ```
 Semana 1-2  ▓▓░░░░░░  Fundação: dados, metodologia, estrutura GitHub
@@ -213,7 +213,7 @@ ibea-angola/
 
 ---
 
-## 🌍 Impacto e Público-Alvo
+## Impacto e Público-Alvo
 
 | Público | Como usa o IBEA |
 |---------|----------------|
@@ -225,11 +225,11 @@ ibea-angola/
 
 ---
 
-## 👤 Sobre o Projecto
+## Sobre o Projecto
 
-**Autora:** PrisTheAnalyst  
+**Autora:** PrisTheAnalyst / Margarida Baltazar
 **Contexto:** Projecto de dados independente, open-source, sem fins comerciais.  
-**Motivação:** Preencher o gap de inteligência económica em tempo real sobre Angola — combinando rigor técnico com conhecimento profundo do contexto local.
+**Motivação:** Preencher o gap de inteligência económica em tempo real sobre Angola, combinando rigor técnico com conhecimento profundo do contexto local.
 
 > *"Não construo dashboards. Construo sistemas que transformam a realidade angolana em dados que o mundo consegue ler."*
 
